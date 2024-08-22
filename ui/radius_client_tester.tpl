@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-12">
       <div class="panel panel-primary panel-hovered panel-stacked mb30">
-        <div class="panel-heading">Test User Connectivity</div>
+        <div class="panel-heading">{Lang::T('Test User Connectivity')}</div>
         <div class="panel-body">
           <div class="form-group">
             <label class="col-md-2 control-label">Username</label>
@@ -12,13 +12,13 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">password</label>
+            <label class="col-md-2 control-label">Password</label>
             <div class="col-md-6">
               <input type="password" id="password" name="password" value="{$password}" placeholder="Password" class="form-control">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Nas IP Address</label>
+            <label class="col-md-2 control-label">{Lang::T('Nas IP Address')}</label>
             <div class="col-md-6">
               <input type="text" id="address" name="address" value="{$address}" placeholder="127.0.0.1" class="form-control">
             </div>
@@ -37,12 +37,12 @@
           </div>
           <div class="form-group">
             <div class="col-lg-offset-2 col-lg-10">
-              <button class="btn btn-success waves-effect waves-light" type="submit" name="submit" value="Submit">Test User Connection</button>
+              <button class="btn btn-success waves-effect waves-light" type="submit" name="submit" value="Submit">{Lang::T('Test User Connection')}</button>
             </div>
           </div>
         </div>
       </div> {if $output != ''} <div class="panel panel-primary panel-hovered panel-stacked mb30">
-        <div class="panel-heading">Results</div>
+        <div class="panel-heading">{Lang::T('Results')}</div>
         <div class="panel-body">
           <pre>{$output}</pre>
         </div>
